@@ -1,0 +1,32 @@
+[
+    {
+        "src": "/images/Victoria_Harbour_morning.jpg",
+        "alt": "The sea, bird, and buildings at morning of Victoria Harbour",
+        "caption": "The Morning at Victoria Harbour"
+    },
+
+    {
+        "src": "/images/Victoria_Harbour_noon.jpg",
+        "alt": "A clear daytime panorama of Victoria Harbour with blue skies and sunlit waters",
+        "caption": "The Noon at Victoria Harbour"
+    },
+
+    {
+        "src": "/images/Central_dusk.jpg",
+        "alt": "Warm light on Central's heritage buildings and a passing double-decker tram",
+        "caption": "The Afternoon at Central"
+    },
+
+    {
+        "src": "/images/Central_evening.jpg",
+        "alt": "Twilight reflecting off glass towers above Central's winding traffic arteries",
+        "caption": "The Evening at Central"
+    },
+
+    {
+        "src": "/images/The_Peak_night.jpg",
+        "alt": "Nighttime at The Peak, showing the magnificence of buildings and Victoria Harbour",
+        "caption": "The Night at The Peak"
+    }
+
+]
