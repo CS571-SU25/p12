@@ -13,19 +13,13 @@
 
     {
         "src": "/images/Central_dusk.jpg",
-        "alt": "Warm light on Central's heritage buildings and a passing double-decker tram",
+        "alt": "Central's heritage façades glowing in dusk light",
         "caption": "The Afternoon at Central"
     },
 
     {
-        "src": "/images/Central_evening.jpg",
-        "alt": "Twilight reflecting off glass towers above Central's winding traffic arteries",
-        "caption": "The Evening at Central"
-    },
-
-    {
-        "src": "/images/The_Peak_night.jpg",
-        "alt": "Nighttime at The Peak, showing the magnificence of buildings and Victoria Harbour",
+        "src": "/images/The_Peak_night.png",
+        "alt": "Night City Lights from Victoria Peak",
         "caption": "The Night at The Peak"
     }
 

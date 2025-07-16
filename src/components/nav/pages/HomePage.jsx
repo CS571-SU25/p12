@@ -53,7 +53,7 @@ export default function HomePage() {
 
   return (
     <div className="container mt-4">
-      <h1 className="mb-4">Welcome to HK Stories</h1>
+      <h1 className="mb-4">Welcome to HK</h1>
       <Carousel>
         {slides.map((slide, idx) => (
           <Carousel.Item key={idx}>

@@ -6,6 +6,7 @@ export default function AppNavBar(props){
     return <Navbar>
         <Container fluid>
             <Nav.Link as={Link} to = "/">Home Page</Nav.Link>
+            <Nav.Link as={Link} to ="/story">Story</Nav.Link>
             <Nav.Link as={Link} to = "/food">Food</Nav.Link>
             <Nav.Link as={Link} to ="/tourist">Tourist Attractions</Nav.Link>
             <Nav.Link as={Link} to ="/log-in">Log in</Nav.Link>
