@@ -1,3 +1,3 @@
 export default function FoodPage() {
-  return <h1>Food Page</h1>;
+  return <h1>Food Page: Under Construction</h1>;
 }

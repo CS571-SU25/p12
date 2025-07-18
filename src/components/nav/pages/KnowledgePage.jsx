@@ -31,6 +31,12 @@ export default function KnowledgePage() {
       id: 5,
       question: "Why is English also an official language?",
       answer: "This is because Hong Kong was a former British colony from 1842 to 1997. It retained English as an official language alongside Chinese when sovereignty was handed back."
+    },
+
+    {
+      id: 6,
+      question: "What are the key regions of Hong Kong?",
+      answer: "Hong Kong Island, Kowloon, and New Territories."
     }
   ]
   return <>

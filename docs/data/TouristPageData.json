@@ -1,0 +1,112 @@
+[
+    {
+  "id": 1,
+  "name": "Avenue of Stars",
+  "images": [
+    {
+      "src": "/images/Avenue_of_Stars_1.png",
+      "alt": "The entrance plaza of the Avenue of Stars with a large map display"
+    },
+    {
+      "src": "/images/Avenue_of_Stars_2.jpg",
+      "alt": "Aerial view of Victoria Harbour and the promenade from an elevated vantage point"
+    },
+    {
+      "src": "/images/Avenue_of_Stars_3.png",
+      "alt": "Walkway and viewing platform along the Avenue of Stars, lined with tourists"
+    },
+    {
+      "src": "/images/Avenue_of_Stars_4.png",
+      "alt": "Palm trees and crowds at dusk on the Avenue of Stars overlooking the harbour"
+    },
+    {
+      "src": "/images/Avenue_of_Stars_5.png",
+      "alt": "Nighttime skyline of Victoria Harbour seen from the Avenue of Stars"
+    }
+  ],
+  "region": "Kowloon",
+  "interests": ["Photography", "Entertainment"],
+  "highlights": ["Star Ferry Pier", "K11 Art Mall", "Harbour City"],
+  "description": "The Avenue of Stars runs along the Victoria Harbour waterfront and offers one of the best vantage points for capturing Hong Kong's skyline and nightly light show. Whether you visit in daylight or after dark, you'll experience stunning views of the city across the water.",
+  "highlyRecommended": true
+},
+
+{
+  "id": 2,
+  "name": "Victoria Peak",
+  "images": [
+    {
+      "src": "/images/the_peak_1.png",
+      "alt": "View of Victoria Peak tram station and surrounding plaza"
+    },
+    {
+      "src": "/images/the_peak_2.png",
+      "alt": "Panoramic vista of Hong Kong Island and Victoria Harbour from the Peak"
+    },
+    {
+      "src": "/images/the_peak_3.png",
+      "alt": "The Peak tram winding up the hillside past lush greenery"
+    }
+  ],
+  "region": "Hong Kong Island",
+  "interests": ["Photography"],
+  "highlights": ["Peak Tram", "Panoramic Vista"],
+  "description": "Victoria Peak offers the most sweeping views over Hong Kong Island and Victoria Harbour. A ride on the historic Peak Tram transports you up steep slopes to a spectacular vantage point—ideal for photographers and first-time visitors alike.",
+  "highlyRecommended": true
+},
+
+{
+  "id": 3,
+  "name": "Central Harbourfront",
+  "images": [
+    {
+      "src": "/images/Central_dusk.jpg",
+      "alt": "Central's heritage façades glowing in dusk light"
+    },
+    {
+        "src": "/images/central_1.jpg",
+        "alt": "Central's buildings and road in the evening."
+    },
+    {
+      "src": "/images/central_2.jpg",
+      "alt": "Visitors posing in front of the 'I LOVE 852' sign beside the Ferris wheel"
+    }
+  ],
+  "region": "Hong Kong Island",
+  "interests": ["Photography", "Entertainment"],
+  "highlights": ["Hong Kong Observation Wheel", "Harbourfront Promenade Shopping"],
+  "description": "Central Harbourfront features the iconic Hong Kong Observation Wheel and a bustling promenade of shops and eateries. It's a perfect spot to snap panoramic city views by day or enjoy the wheel's colorful lights after sunset.",
+  "highlyRecommended": true
+},
+
+{
+  "id": 4,
+  "name": "Disney Land",
+  "images": [
+    {
+      "src": "/images/disney_1.png",
+      "alt": "A boy stands in the front of Disyney special railway"
+    },
+    {
+        "src": "/images/disney_2.png",
+        "alt": "Disney castle in the morning with many visitors"
+    },
+    {
+      "src": "/images/disney_3.png",
+      "alt": "The interior decoration of one entertainment facility of Disney"
+    },
+    {
+      "src": "/images/disney_4.jpg",
+      "alt": "Disney castle in the evening with colorful lights"
+    }
+
+  ],
+  "region": "Others",
+  "interests": ["Entertainment"],
+  "highlights": ["Disney land"],
+  "description": "A magical theme park featuring classic Disney characters, rides and nightly castle projections",
+  "highlyRecommended": true
+}
+
+
+]

@@ -38,7 +38,7 @@ export default function HomePage() {
   if (error) {
     return (
       <Alert variant="danger" className="my-5">
-        Cannot load：{error.message}
+        Cannot load: {error.message}
       </Alert>
     );
   }
