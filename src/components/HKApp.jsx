@@ -1,20 +1,18 @@
 import React from "react";
 import AppNavBar from "./nav/AppNavBar";
+import Footer from "./nav/Footer";
 import { Outlet } from "react-router";
 
 
 function HKApp() {
   return <div>
     <AppNavBar />
-    <div style={{
-      backgroundColor: "white",
-      padding: "1.25rem 0",
-      textAlign: "left"
-    }}>
-    </div>
-    <div style={{ margin: "1rem" }}>
+
+    <div style={{ padding: "1rem" }}>
       <Outlet />
     </div>
+
+    <Footer />
   </div>
 }
 
