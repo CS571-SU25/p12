@@ -1,5 +1,5 @@
 [
-    {
+{
   "id": 1,
   "name": "Avenue of Stars",
   "images": [
@@ -106,6 +106,110 @@
   "highlights": ["Disney land"],
   "description": "A magical theme park featuring classic Disney characters, rides and nightly castle projections",
   "highlyRecommended": true
+},
+
+{
+    "id": 5,
+    "name": "Wong Tai Sin",
+    "images": [
+        {
+            "src": "/images/Wong_Tai_Sin_1.jpg",
+            "alt": "The temple mall of Wong Tai Sin and some stores"
+        },
+        {
+            "src": "/images/Wong_Tai_Sin_2.jpg",
+            "alt": "The inside attic corridor and pond of Wong Tai Sin"
+        },
+
+        {
+            "src": "/images/Wong_Tai_Sin_3.jpg",
+            "alt": "Attic corridor and pond of Wong Tai Sin with a focus on pond"
+        }
+    ],
+    "region": "Kowloon",
+    "interests": ["Photography"],
+    "highlights": ["Temple"],
+    "description": "Wong Tai Sin Temple is a renowned shrine in Kowloon's Wong Tai Sin district, celebrated for its vibrant architecture and “kau chim” fortune-telling.",
+    "highlyRecommended": false
+},
+
+{
+    "id": 6,
+    "name": "Hong Kong Park",
+    "images": [
+        {
+            "src": "/images/HK_Park_1.jpg",
+            "alt": "Hong Kong Park entrance sign illuminated at night with surrounding plants"
+        },
+
+        {
+            "src": "/images/HK_Park_2.jpg",
+            "alt":"Night view of a tiled fountain and colonnade walkway inside Hong Kong Park"
+        },
+
+        {
+            "src": "/images/HK_Park_3.jpg",
+            "alt":"Curved glass railing and tiled plaza under a geometric canopy in Hong Kong Park"
+        },
+
+        {
+            "src": "/images/HK_Park_4.jpg",
+            "alt":"Small illuminated garden nook with wooden pergola and decorative lights in Hong Kong Park"
+        }
+    ],
+    "region": "Hong Kong Island",
+    "interests":["Photography"],
+    "highlights":["Night View"],
+    "description": "Hong Kong Park is a green oasis in Central with gardens, fountains and pavilions. It's beautifully lit at night for a peaceful city escape.",
+    "highlyRecommended": false
+},
+
+{
+    "id": 7,
+    "name": "Hong Kong Zoological and Botanical Gardens",
+    "images":[
+        {
+            "src": "/images/garden_1.jpg",
+            "alt": "The entrance of Hong Kong Zoological and Botanical Gardens with a large fountain"
+        },
+        {
+            "src": "/images/garden_2.jpg",
+            "alt": "Bronze statue of King George V standing on a stone plinth surrounded by tropical plants"
+        }
+    ],
+    "region": "Hong Kong Island",
+    "interests":["Photography"],
+    "highlights":["Plants", "Birds"],
+    "description": "Hong Kong Zoological and Botanical Gardens is a historic green sanctuary on Hong Kong Island (in Central), featuring themed animal enclosures, formal flower beds and shaded walkways amid mature trees.",
+    "highlyRecommended": false
+},
+
+{
+    "id": 8,
+    "name": "Sweetgum Forest",
+    "images": [
+        {
+            "src": "/images/maple_1.jpg",
+            "alt": "Reddish young shoots and wet leaves in front of misty green hills"
+        },
+        {
+            "src": "/images/maple_2.jpg",
+            "alt": "Straight concrete path lined with trees showing early autumn foliage"
+        },
+        {
+            "src": "/images/maple_3.jpg",
+            "alt": "Winding forest road snaking uphill between mixed green and orange trees"
+        },
+        {
+            "src": "/images/maple_4.jpg",
+            "alt": "Dense undergrowth and tree canopy framing a view of verdant hillside"
+        }
+    ],
+    "region": "The New Territories",
+    "interests":["Photography"],
+    "highlights":["Plants"],
+    "description": "Maple Grove in Yuen Long is a scenic trail area where the young shoots turn red like maple leaves, set against misty hills and winding paths—an off-beat spot for a quiet forest walk.",
+    "highlyRecommended": true
 }
 
 
