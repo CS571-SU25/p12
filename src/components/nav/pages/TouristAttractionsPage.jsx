@@ -21,7 +21,7 @@ export default function TouristAttractionsPage() {
     },[])
 
   return <>
-  <h1>Tourist Attraction Page: Under Construction</h1>;
+  <h1>Tourist Attraction Page: Under Construction. Please read the last section of the page</h1>;
 
   <Container fluid>
     <Row className="g-4 align-items-start">
@@ -32,5 +32,9 @@ export default function TouristAttractionsPage() {
       ))}
     </Row>
   </Container>
+
+  <p>I am still implementing the web. It is expected to have a filter function that searchs based on regions / interests / whether
+    highly recommended. The user can save their favorites when they log in.
+  </p>
   </> 
 }
