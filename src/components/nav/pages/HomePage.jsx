@@ -52,8 +52,9 @@ export default function HomePage() {
   }
 
   return (
-    <div className="container mt-4">
-      <h1 className="mb-4">Welcome to HK</h1>
+    <div style={{ backgroundColor: '#f2f2f2', padding: '2rem 0' }}>
+    <div className="container">
+      <h1 className="mb-4" style = {{color: "#c60c30"}}>Welcome to HK</h1>
       <Carousel>
         {slides.map((slide, idx) => (
           <Carousel.Item key={idx}>
@@ -64,12 +65,13 @@ export default function HomePage() {
               style={{ objectFit: "cover", height: "60vh" }}
             />
             <Carousel.Caption>
-              <h3>{slide.alt}</h3>
+              <h2>{slide.alt}</h2>
               <p>{slide.caption}</p>
             </Carousel.Caption>
           </Carousel.Item>
         ))}
       </Carousel>
+    </div>
     </div>
   );
 }

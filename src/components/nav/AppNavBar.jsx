@@ -2,37 +2,47 @@ import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router";
 
+const NAVBAR_STYLE = {
+    backgroundColor: "#ffffff",
+    //backgroundColor: "#c60c30",
+    borderBottom: "2px solid #c60c30",
+};
+const LINK_STYLE = {
+    //color: "#ffffff",
+    color: "#c60c30",
+    fontWeight: 500,
+    margin: "0 1rem",
+};
+
 export default function AppNavBar(props) {
     return (
-        <Navbar bg="light" variant="light" expand="lg" sticky="top" style={{ borderBottom: "1px solid #e0e0e0" }}>
+        <Navbar expand="lg" style={NAVBAR_STYLE} variant="light" sticky="top">
             <Container fluid className="justify-content-between">
                 <Nav className="align-items-center">
-                    <Nav.Link as={Link} to="/">
+                    <Nav.Link as={Link} to="/" style={LINK_STYLE}>
                         Home Page
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/knowledge">
+                    <Nav.Link as={Link} to="/knowledge" style={LINK_STYLE}>
                         HK Knowledge
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/food">
+                    <Nav.Link as={Link} to="/food" style={LINK_STYLE}>
                         Food
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/tourist">
+                    <Nav.Link as={Link} to="/tourist" style={LINK_STYLE}>
                         Tourist Attractions
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/travelGuide" style={LINK_STYLE}>
+                        Travel Guide
                     </Nav.Link>
                 </Nav>
 
                 <Nav className="align-items-center">
-                    <Nav.Link as={Link} to="/log-in">
-                        Log in
-                    </Nav.Link>
-                    <Nav.Link
-                        as={Link}
-                        to="/sign-up"
-                        style={{ padding: "0.25rem 0.75rem", lineHeight: "1.5" }}
-                    >
-                        Sign Up
+                    <Nav.Link as={Link} to="/bookmark" style={LINK_STYLE}>
+                        Bookmark
                     </Nav.Link>
                 </Nav>
+
+
             </Container>
         </Navbar>
     );

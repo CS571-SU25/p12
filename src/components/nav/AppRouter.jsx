@@ -6,9 +6,9 @@ import HomePage from "./pages/HomePage";
 import KnowledgePage from "./pages/KnowledgePage";
 import FoodPage from "./pages/FoodPage";
 import TouristAttractionsPage from "./pages/TouristAttractionsPage";
-import LoginPage from "./pages/LoginPage";
-import SignUpPage from "./pages/SignUpPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import BookmarkPage from "./pages/BookmarkPage"
+import TravelGuidePage from "./pages/TravelGuidePage"
 
 export default function AppRouter() {
     return <HashRouter>
@@ -18,8 +18,8 @@ export default function AppRouter() {
                 <Route path="knowledge" element={<KnowledgePage/>}/>
                 <Route path="food"  element={<FoodPage />} />
                 <Route path = "tourist" element={<TouristAttractionsPage />} />
-                <Route path="log-in"  element={<LoginPage />} />
-                <Route path = "sign-up" element={<SignUpPage />} />
+                <Route path = "bookmark" element={<BookmarkPage/>}/>
+                <Route path = "travelGuide" element={<TravelGuidePage/>}/>
                 <Route path = "*" element={<NotFoundPage />} />
             </Route>
         </Routes>

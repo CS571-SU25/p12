@@ -25,10 +25,11 @@
     }
   ],
   "region": "Kowloon",
-  "interests": ["Photography", "Entertainment"],
+  "interests": ["Photography", "Entertainment", "Commerical"],
   "highlights": ["Star Ferry Pier", "K11 Art Mall", "Harbour City"],
   "description": "The Avenue of Stars runs along the Victoria Harbour waterfront and offers one of the best vantage points for capturing Hong Kong's skyline and nightly light show. Whether you visit in daylight or after dark, you'll experience stunning views of the city across the water.",
-  "highlyRecommended": true
+  "highlyRecommended": true,
+  "type": "tourist"
 },
 
 {
@@ -52,7 +53,8 @@
   "interests": ["Photography"],
   "highlights": ["Peak Tram", "Panoramic Vista"],
   "description": "Victoria Peak offers the most sweeping views over Hong Kong Island and Victoria Harbour. A ride on the historic Peak Tram transports you up steep slopes to a spectacular vantage point—ideal for photographers and first-time visitors alike.",
-  "highlyRecommended": true
+  "highlyRecommended": true,
+  "type": "tourist"
 },
 
 {
@@ -73,10 +75,11 @@
     }
   ],
   "region": "Hong Kong Island",
-  "interests": ["Photography", "Entertainment"],
+  "interests": ["Photography", "Entertainment", "Commerical"],
   "highlights": ["Hong Kong Observation Wheel", "Harbourfront Promenade Shopping"],
   "description": "Central Harbourfront features the iconic Hong Kong Observation Wheel and a bustling promenade of shops and eateries. It's a perfect spot to snap panoramic city views by day or enjoy the wheel's colorful lights after sunset.",
-  "highlyRecommended": true
+  "highlyRecommended": true,
+  "type": "tourist"
 },
 
 {
@@ -105,7 +108,8 @@
   "interests": ["Entertainment"],
   "highlights": ["Disney land"],
   "description": "A magical theme park featuring classic Disney characters, rides and nightly castle projections",
-  "highlyRecommended": true
+  "highlyRecommended": true,
+  "type": "tourist"
 },
 
 {
@@ -130,7 +134,8 @@
     "interests": ["Photography"],
     "highlights": ["Temple"],
     "description": "Wong Tai Sin Temple is a renowned shrine in Kowloon's Wong Tai Sin district, celebrated for its vibrant architecture and “kau chim” fortune-telling.",
-    "highlyRecommended": false
+    "highlyRecommended": false,
+    "type": "tourist"
 },
 
 {
@@ -161,7 +166,8 @@
     "interests":["Photography"],
     "highlights":["Night View"],
     "description": "Hong Kong Park is a green oasis in Central with gardens, fountains and pavilions. It's beautifully lit at night for a peaceful city escape.",
-    "highlyRecommended": false
+    "highlyRecommended": false,
+    "type": "tourist"
 },
 
 {
@@ -181,7 +187,8 @@
     "interests":["Photography"],
     "highlights":["Plants", "Birds"],
     "description": "Hong Kong Zoological and Botanical Gardens is a historic green sanctuary on Hong Kong Island (in Central), featuring themed animal enclosures, formal flower beds and shaded walkways amid mature trees.",
-    "highlyRecommended": false
+    "highlyRecommended": false,
+    "type": "tourist"
 },
 
 {
@@ -209,7 +216,8 @@
     "interests":["Photography"],
     "highlights":["Plants"],
     "description": "Maple Grove in Yuen Long is a scenic trail area where the young shoots turn red like maple leaves, set against misty hills and winding paths—an off-beat spot for a quiet forest walk.",
-    "highlyRecommended": true
+    "highlyRecommended": true,
+    "type": "tourist"
 }
 
 

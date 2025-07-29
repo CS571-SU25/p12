@@ -39,11 +39,11 @@ export default function KnowledgePage() {
       answer: "Hong Kong Island, Kowloon, and New Territories."
     }
   ]
-  return <>
-    <section aria-labelledby="hk-knowledge-title" style={{ padding: "1rem", maxWidth: 800, margin: "0 auto" }}>
-  <h1 id="hk-knowledge-title">Knowledge of HK</h1>
+  return <div style={{ backgroundColor: '#f2f2f2', padding: '2rem 0' }}>
+    <section aria-labelledby="hk-knowledge-title" style={{ padding: "1rem", maxWidth: 800, margin: "0 auto"  }}>
+  <h1 id="hk-knowledge-title" style = {{marginBottom: '0.5rem', color: "#c60c30"}} >Knowledge of HK</h1>
 
-  <p style={{ marginBottom: "1.5rem", color: "#555", fontSize: "1rem" }}>
+  <p style={{ marginBottom: "1.5rem", color: "#333", fontSize: "1rem" }}>
         Below are some of the most frequently asked questions about Hong Kong—
         from its name and political status to the languages people speak.
         Feel free to scroll and learn more!
@@ -57,7 +57,7 @@ export default function KnowledgePage() {
             flexShrink: 0,
             width: "30%",
             fontWeight: 600,
-            borderLeft: "4px solid #007bff",
+            borderLeft: "4px solid #c60c30",
             paddingLeft: "1rem",
           }}
         >
@@ -72,5 +72,5 @@ export default function KnowledgePage() {
 </section>
 
 
-  </>
+  </div>
 }
