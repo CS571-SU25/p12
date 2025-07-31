@@ -10,23 +10,35 @@ export default function TouristItem({ tourist }) {
     }
 
     return <>
-        <Card className="h-100">
-            <Card.Img variant="top" src={tourist.images[0].src.startsWith("http") ? tourist.images[0].src : `${import.meta.env.BASE_URL}${tourist.images[0].src.replace(/^\/+/, "")}`}
-                alt={tourist.images[0].alt} style={{ aspectRatio: "1/1", objectFit: "cover" }} />
+        <Card className="h-100" style={{ borderRadius: 12, overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}>
+            <Card.Body className="d-flex p-3 gap-3">
+                <div style={{ width: '40%', flexShrink: 0, borderRadius: 8, overflow: 'hidden' }}>
+                    <Card.Img
+                        src={
+                            tourist.images[0].src.startsWith("http")
+                                ? tourist.images[0].src
+                                : `${import.meta.env.BASE_URL}${tourist.images[0].src.replace(/^\/+/, "")}`
+                        }
+                        alt={tourist.images[0].alt}
+                        style={{ width: '100%', aspectRatio: "1/1", objectFit: "cover" }}
+                    />
+                </div>
 
-            <Card.Body className="d-flex flex-column">
-                <h2 className="h5 card-title">{tourist.name}</h2>
-                <p className="text-muted mb-1">{tourist.region}</p>
-                <p className="text-muted mb-1">{tourist.interests.join(', ')}   </p>
-                <div className="mt-auto d-flex gap-2">
-                    <Button variant="secondary" size="sm" onClick={() => setShowMore(true)}>
-                        Show Details
-                    </Button>
-                    <Button variant="success" size="sm" onClick={markSave}>
-                        ⭐ Save
-                    </Button>
+                <div className="d-flex flex-column flex-grow-1" style={{ paddingRight: 8 }}>
+                    <h2 className="h5 mb-1">{tourist.name}</h2>
+                    <p className="text-muted mb-1">{tourist.region}</p>
+                    <p className="text-muted mb-3">{tourist.interests.join(', ')}</p>
+                    <div className="mt-auto d-flex gap-2 mb-2">
+                        <Button variant="secondary" size="sm" onClick={() => setShowMore(true)}>
+                            Show Details
+                        </Button>
+                        <Button variant="success" size="sm">
+                            ⭐ Save
+                        </Button>
+                    </div>
                 </div>
             </Card.Body>
+
         </Card>
 
         <Modal show={showMore} onHide={() => setShowMore(false)} size="md" centered scrollable>
@@ -71,9 +83,9 @@ export default function TouristItem({ tourist }) {
 
             </Modal.Body>
             <Modal.Footer>
-                 <Button variant="secondary" onClick={() => setShowMore(false)}>
+                <Button variant="secondary" onClick={() => setShowMore(false)}>
                     Close
-                 </Button>
+                </Button>
             </Modal.Footer>
         </Modal>
     </>
