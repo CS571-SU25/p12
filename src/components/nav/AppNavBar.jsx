@@ -31,6 +31,9 @@ export default function AppNavBar(props) {
                     <Nav.Link as={Link} to="/tourist" style={LINK_STYLE}>
                         Tourist Attractions
                     </Nav.Link>
+                    <Nav.Link as={Link} to="/music" style={LINK_STYLE}>
+                    Music
+                    </Nav.Link>
                     <Nav.Link as={Link} to="/travelGuide" style={LINK_STYLE}>
                         Travel Guide
                     </Nav.Link>

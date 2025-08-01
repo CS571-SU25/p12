@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { Card, Button, Carousel, Modal } from "react-bootstrap";
 
-export default function TouristItem({ tourist }) {
+export default function TouristItem({ tourist, saved = false, onToggleSave = () => {} }) {
 
     const [showMore, setShowMore] = useState(false);
 
-    const markSave = () => {
-
-    }
 
     return <>
         <Card className="h-100" style={{ borderRadius: 12, overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}>
@@ -32,8 +29,8 @@ export default function TouristItem({ tourist }) {
                         <Button variant="secondary" size="sm" onClick={() => setShowMore(true)}>
                             Show Details
                         </Button>
-                        <Button variant="success" size="sm">
-                            ⭐ Save
+                        <Button variant="success" size="sm" onClick={onToggleSave} aria-label={saved ? "Unsave" : "Save"}>
+                            {saved ? "❤ Already Saved" : "⭐ Save"}
                         </Button>
                     </div>
                 </div>

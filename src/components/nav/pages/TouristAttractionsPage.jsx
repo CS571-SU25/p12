@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
 import TouristItem from "./ChildPage/TouristItem"
+import { useSavedComposite } from "../../SavedCompositeContext"
+import { useData } from '../../DataContext';
 
 
 const COLORS = {
@@ -12,32 +14,20 @@ const COLORS = {
 
 export default function TouristAttractionsPage() {
 
-  const [tourist, setTourist] = useState([]);
+  //const [tourist, setTourist] = useState([]);
+  const { tourists, loading } = useData();
+  const { isSaved, toggle } = useSavedComposite();
+
 
   //filter: implement 'refine data' pattern
   const [filterRegion, setFilterRegion] = useState("");
   const [filterInterest, setFilterInterest] = useState("");
   const [filterRecommended, setFilterRecommended] = useState(false);
 
-  //fetch data
-  useEffect(() => {
-    const base = import.meta.env.BASE_URL;
-
-    fetch(`${base}data/TouristPageData.json`)
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      })
-      .then((data) => {
-        //console.log(data);
-        setTourist(data);
-      })
-      .catch(console.error);
-  }, [])
 
   // derive unique regions 
   const regions = [];
-  tourist.forEach((t) => {
+  tourists.forEach((t) => {
     if (!regions.includes(t.region)) {
       regions.push(t.region);
     }
@@ -52,7 +42,7 @@ export default function TouristAttractionsPage() {
 
   // derive unique interests
   const interests = [];
-  tourist.forEach((t) => {
+  tourists.forEach((t) => {
     if (Array.isArray(t.interests)) {
       t.interests.forEach((i) => {
         if (!interests.includes(i)) {
@@ -65,7 +55,7 @@ export default function TouristAttractionsPage() {
   //console.log(interests);
 
   //Apply filter
-  const filteredList = tourist.filter((t) => {
+  const filteredList = tourists.filter((t) => {
     if (filterRegion && t.region !== filterRegion) return false;
     if (filterInterest && !t.interests.includes(filterInterest)) return false;
     if (filterRecommended && !t.highlyRecommended) return false;
@@ -77,6 +67,8 @@ export default function TouristAttractionsPage() {
     setFilterInterest("");
     setFilterRecommended(false);
   };
+
+  if (loading) return <div>Loading...</div>;
 
 
   return <div style={{ backgroundColor: COLORS.background, minHeight: '100vh', padding: '2rem' }}>
@@ -139,7 +131,7 @@ export default function TouristAttractionsPage() {
       <Row xs={1} sm={1} md={2} lg={2} className="g-4">
         {filteredList.map(spot => (
           <Col key={spot.id}>
-            <TouristItem tourist={spot} />
+            <TouristItem tourist={spot} saved={isSaved("tourist", spot.id)} onToggleSave={() => toggle("tourist", spot.id)}/>
           </Col>
         ))}
       </Row>
