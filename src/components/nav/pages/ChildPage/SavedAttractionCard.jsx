@@ -49,7 +49,7 @@ export default function SavedAttractionCard({ attraction }) {
         <div className="d-flex flex-column flex-grow-1" style={{ paddingRight: 8 }}>
 
             <h2 className="h5 mb-1">{attraction.name}</h2>
-            <p className="text-muted mb-1">{attraction.region}</p>
+            <strong className="text-muted mb-1">{attraction.region}</strong>
             {Array.isArray(attraction.interests) && (
             <p className="text-muted mb-2">{attraction.interests.join(", ")}</p>
           )}

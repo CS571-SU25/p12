@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState, useCallback } from "react";
 
-const STORAGE_KEY = "savedItemsComposite"; //e.g. ["tourist:1", "tourist:5"]
+const STORAGE_KEY = "savedItemsComposite"; 
 const SavedContext = createContext(null);
 
 export function SavedProvider({ children }) {
@@ -40,6 +40,7 @@ export function SavedProvider({ children }) {
     [savedSet]
   );
 
+  //change between save and unsave
   const toggle = useCallback((type, id) => {
     setSavedSet((prev) => {
       const key = compositeKey(type, id);
@@ -56,6 +57,7 @@ export function SavedProvider({ children }) {
     });
   }, []);
 
+  //get id by type
   const getSavedIdsByType = useCallback(
     (type) => {
       const prefix = `${type}:`;

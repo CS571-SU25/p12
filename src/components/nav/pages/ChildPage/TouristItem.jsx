@@ -23,7 +23,7 @@ export default function TouristItem({ tourist, saved = false, onToggleSave = () 
 
                 <div className="d-flex flex-column flex-grow-1" style={{ paddingRight: 8 }}>
                     <h2 className="h5 mb-1">{tourist.name}</h2>
-                    <p className="text-muted mb-1">{tourist.region}</p>
+                    <strong className="text-muted mb-1">{tourist.region}</strong>
                     <p className="text-muted mb-3">{tourist.interests.join(', ')}</p>
                     <div className="mt-auto d-flex gap-2 mb-2">
                         <Button variant="secondary" size="sm" onClick={() => setShowMore(true)}>
@@ -63,7 +63,7 @@ export default function TouristItem({ tourist, saved = false, onToggleSave = () 
                 <div className="mt-4">
                     <h4>Description</h4>
                     <p>{tourist.description}</p>
-                    <p>Location: {tourist.region}</p>
+                    <strong>Location: {tourist.region}</strong>
                     <p>You can: {tourist.interests.join(', ')}</p>
                     {tourist.highlights && (
                         <>

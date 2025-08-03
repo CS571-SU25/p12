@@ -5,6 +5,7 @@ const DataContext = createContext(null);
 export function DataProvider({ children }){
 
     const [tourists, setTourists] = useState([]);
+    const [foods, setFoods] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -12,9 +13,11 @@ export function DataProvider({ children }){
         //parallerly fetch data
         Promise.all([
             fetch(`${base}data/TouristPageData.json`).then((r) => (r.ok ? r.json() : [])),
+            fetch(`${base}data/FoodPageData.json`).then((r) => (r.ok ? r.json() : [])),
         ])
-        .then(([touristData]) => {
+        .then(([touristData, foodData]) => {
             setTourists(touristData);
+            setFoods(foodData);
         })
         .catch((e) => {
         console.error("data loading failed", e);
@@ -23,7 +26,7 @@ export function DataProvider({ children }){
     },[])
 
     return(
-        <DataContext.Provider value={{tourists, loading}}>
+        <DataContext.Provider value={{tourists, foods, loading}}>
             {children}
         </DataContext.Provider>
     )

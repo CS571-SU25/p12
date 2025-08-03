@@ -8,8 +8,6 @@ import FoodPage from "./pages/FoodPage";
 import TouristAttractionsPage from "./pages/TouristAttractionsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import BookmarkPage from "./pages/BookmarkPage";
-import TravelGuidePage from "./pages/TravelGuidePage";
-import MusicPage from "./pages/MusicPage";
 
 export default function AppRouter() {
     return <HashRouter>
@@ -20,8 +18,6 @@ export default function AppRouter() {
                 <Route path="food"  element={<FoodPage />} />
                 <Route path = "tourist" element={<TouristAttractionsPage />} />
                 <Route path = "bookmark" element={<BookmarkPage/>}/>
-                <Route path = "music" element={<MusicPage/>}/>
-                <Route path = "travelGuide" element={<TravelGuidePage/>}/>
                 <Route path = "*" element={<NotFoundPage />} />
             </Route>
         </Routes>

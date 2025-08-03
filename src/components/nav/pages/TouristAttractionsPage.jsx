@@ -117,24 +117,37 @@ export default function TouristAttractionsPage() {
 
             <Button
               onClick={clearFilters}
+              type="button"
               style={{ backgroundColor: COLORS.primary, borderColor: COLORS.primary, color: COLORS.buttonText }}
               className="mb-3">
               Clear Filters
             </Button>
-
-
           </Form>
         </Card.Body>
 
       </Card>
 
-      <Row xs={1} sm={1} md={2} lg={2} className="g-4">
-        {filteredList.map(spot => (
-          <Col key={spot.id}>
-            <TouristItem tourist={spot} saved={isSaved("tourist", spot.id)} onToggleSave={() => toggle("tourist", spot.id)}/>
-          </Col>
-        ))}
-      </Row>
+      {filteredList.length === 0 ? (
+        <Card style={{ padding: "1rem", borderRadius: 8, marginTop: 12 }}>
+          <Card.Body>
+            <p style={{ margin: 0 }}>
+              No matching tourist attractions. Try clearing the filters or broadening the criteria.
+            </p>
+          </Card.Body>
+        </Card>
+      ) : (
+        <Row xs={1} sm={1} md={2} lg={2} className="g-4">
+          {filteredList.map((spot) => (
+            <Col key={spot.id}>
+              <TouristItem
+                tourist={spot}
+                saved={isSaved("tourist", spot.id)}
+                onToggleSave={() => toggle("tourist", spot.id)}
+              />
+            </Col>
+          ))}
+        </Row>
+      )}
 
     </Container>
 

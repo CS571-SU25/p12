@@ -1,6 +1,12 @@
-import React, { useState } from "react";
-import {Container, Row, Col, Card} from "react-bootstrap";
+import React from "react";
+import {Container} from "react-bootstrap";
 
+const COLORS = {
+  primary: '#c60c30',    // HK flag red
+  background: '#f2f2f2', // light neutral
+  formBg: '#ffffff',     // white for form
+  buttonText: '#ffffff'
+};
 
 export default function KnowledgePage() {
 
@@ -39,7 +45,8 @@ export default function KnowledgePage() {
       answer: "Hong Kong Island, Kowloon, and New Territories."
     }
   ]
-  return <div style={{ backgroundColor: '#f2f2f2', padding: '2rem 0' }}>
+  return <div style={{ backgroundColor: COLORS.background, minHeight: '100vh', padding: '2rem' }}>
+      <Container>
     <section aria-labelledby="hk-knowledge-title" style={{ padding: "1rem", maxWidth: 800, margin: "0 auto"  }}>
   <h1 id="hk-knowledge-title" style = {{marginBottom: '0.5rem', color: "#c60c30"}} >Knowledge of HK</h1>
 
@@ -71,6 +78,7 @@ export default function KnowledgePage() {
   </dl>
 </section>
 
-
+</Container>
   </div>
+  
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link } from "react-router";
+import { Link, useLocation  } from "react-router";
+
 
 const NAVBAR_STYLE = {
     backgroundColor: "#ffffff",
@@ -15,32 +16,42 @@ const LINK_STYLE = {
 };
 
 export default function AppNavBar(props) {
+    const location = useLocation();
+
+    const makeStyle = (to) => {
+    const isActive =
+      to === "/"
+        ? location.pathname === "/"
+        : location.pathname.startsWith(to);
+    if (!isActive) return LINK_STYLE;
+    return {
+      ...LINK_STYLE,
+      fontWeight: 600,
+      paddingBottom: 8, 
+      boxShadow: "inset 0 -3px 0 #c60c30", 
+    };
+  };
+
     return (
         <Navbar expand="lg" style={NAVBAR_STYLE} variant="light" sticky="top">
             <Container fluid className="justify-content-between">
                 <Nav className="align-items-center">
-                    <Nav.Link as={Link} to="/" style={LINK_STYLE}>
+                    <Nav.Link as={Link} to="/" style={makeStyle("/")}>
                         Home Page
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/knowledge" style={LINK_STYLE}>
+                    <Nav.Link as={Link} to="/knowledge" style={makeStyle("/knowledge")}>
                         HK Knowledge
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/food" style={LINK_STYLE}>
+                    <Nav.Link as={Link} to="/food" style={makeStyle("/food")}>
                         Food
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/tourist" style={LINK_STYLE}>
+                    <Nav.Link as={Link} to="/tourist" style={makeStyle("/tourist")}>
                         Tourist Attractions
-                    </Nav.Link>
-                    <Nav.Link as={Link} to="/music" style={LINK_STYLE}>
-                    Music
-                    </Nav.Link>
-                    <Nav.Link as={Link} to="/travelGuide" style={LINK_STYLE}>
-                        Travel Guide
                     </Nav.Link>
                 </Nav>
 
                 <Nav className="align-items-center">
-                    <Nav.Link as={Link} to="/bookmark" style={LINK_STYLE}>
+                    <Nav.Link as={Link} to="/bookmark" style={makeStyle("/bookmark")}>
                         Bookmark
                     </Nav.Link>
                 </Nav>

@@ -1,0 +1,180 @@
+[
+    {
+        "id": 1,
+        "name": "Ichiran Ramen",
+        "images": [
+            {
+                "src": "/images/Ichiran_Ramen_1.jpg",
+                "alt": "Ichiran ramen with extra sides, including meet, egg, and black fungus"
+            },
+            {
+                "src": "/images/Ichiran_Ramen_2.jpg",
+                "alt": "Ichiran ramen with a glass of water nearby"
+            }
+        ],
+        "description": "A bowl of Ichiran Tonkotsu ramen: creamy pork-bone broth, thin noodles, sliced chashu pork, scallions, and a dollop of spicy red sauce. Spice level is adjustable; can add a soft-boiled egg or extra toppings. Import from Japan",
+        "estimatedMinCost": "100 HKD",
+        "highlyRecommended": true,
+        "classification": "Staple Food",
+        "type": "food"
+
+    },
+
+    {
+        "id": 2,
+        "name": "Chongqing Chicken Pot",
+        "images": [
+            {
+                "src": "/images/Chongqing_Chicken_Pot.jpg",
+                "alt": "Hong Kong-style Chongqing chicken pot with braised chicken chunks and onions simmering in a spicy"
+            }
+        ],
+        "description": "Hong Kong-style Chongqing chicken pot: tender chicken pieces and onions braised with dried chilis and Sichuan peppercorns in a bold, numbing-spicy sauce, served sizzling in a black claypot.",
+        "estimatedMinCost": "198 HKD",
+        "highlyRecommended": true,
+        "classification": "Staple Food",
+        "type": "food"
+    },
+
+    {
+        "id": 3,
+        "name": "Cart Noodles",
+        "images": [
+            {
+                "src": "/images/Cart_Noodles_1.jpg",
+                "alt": "Hong Kong-style cart noodles bowl with enoki mushrooms, sausage, greens, and fried garlic in clear broth"
+            }
+        ],
+        "description": "Hong Kong-style cart noodles: thin noodles hidden beneath enoki mushrooms, sausage, greens, and crispy fried garlic in a light savory broth.",
+        "estimatedMinCost": "70 HKD",
+        "highlyRecommended": false,
+        "classification": "Staple Food",
+        "type": "food"
+    },
+
+    {
+        "id": 4,
+        "name": "Hong Kong-Style Milk Tea",
+        "images":[
+            {
+                "src": "/images/milk_tea_1.jpg",
+                "alt": "Tall glass of iced Hong Kong-style milk tea with ice cubes"
+            }
+        ],
+        "description": "Chilled Hong Kong-style milk tea: strong black tea blended with creamy milk, poured over ice in a tall glass with a purple straw for a refreshing sip.",
+        "estimatedMinCost": "10 HKD",
+        "highlyRecommended": false,
+        "classification":"Beverage",
+        "type": "food"
+    },
+
+    {
+        "id": 5,
+        "name": "Coconut milk 椰汁大王",
+        "images":[
+            {
+                "src": "/images/coconut_milk_1.png",
+                "alt": "Iced coconut milk with tapioca pearls in a clear cup with a purple straw."
+            }
+        ],
+        "description": "A Hong Kong-style iced coconut milk drink with tapioca pearls in a clear cup.",
+        "estimatedMinCost": "25 HKD",
+        "highlyRecommended": true,
+        "classification":"Beverage",
+        "type": "food"
+    },
+    {
+        "id": 6,
+        "name": "Satay Beef Noodle Soup",
+        "images":[
+            {
+                "src": "/images/Satay_Beef_Noodles_1.jpg",
+                "alt": "Bowl of satay beef noodles with sliced beef in broth"
+            }
+        ],
+        "description": "Satay beef noodle soup featuring tender beef slices and springy noodles in a savory, peanut-spiced broth. Served in a modern square bowl with a spoon and chopsticks.",
+        "estimatedMinCost": "20 HKD",
+        "highlyRecommended": true,
+        "classification":"Staple Food",
+        "type": "food"
+    },
+    {
+        "id": 7,
+        "name": "Corn Rice",
+        "images": [
+            {
+                "src": "/images/corn_rice_1.jpg",
+                "alt": "Bowl of rice topped with creamy corn and diced meat"
+            }
+        ],
+        "description": "Steamed rice topped with a rich, slightly sweet creamy corn mixture and tender diced meat. Served in a black bowl as a comforting side or light meal.",
+        "estimatedMinCost": "50 HKD",
+        "highlyRecommended": false,
+        "classification":"Staple Food",
+        "type": "food"
+        
+    },
+    {
+        "id": 8,
+        "name": "Fish and Pork Siu Mai",
+        "images":[
+            {
+                "src":"/images/Siu_Mai_1.png",
+                "alt": "Four fish and pork siu mai dumplings topped with orange roe in a bamboo steamer."
+            }
+        ],
+        "description":"Hong Kong-style siu mai filled with minced fish and pork, seasoned lightly and topped with a touch of roe. Steamed until tender and juicy, often served with a soy-based dipping sauce.",
+        "estimatedMinCost": "10 HKD",
+        "highlyRecommended": true,
+        "classification":"Snack",
+        "type": "food"
+    },
+
+    {
+        "id": 9,
+        "name": "Hong Kong-style French Toast",
+        "images":[
+            {
+                "src": "/images/Hong_Kong-style_French_Toast_1.png",
+                "alt": "Thick Hong Kong-style French toast with butter and syrup, served with strawberries."
+            }
+        ],
+        "description":"Deep-fried sandwich toast stuffed with condensed milk and peanut butter, golden and crispy on the outside. Topped with a pat of butter and drizzled syrup, served with fresh strawberries and extra syrup on the side in a cozy café setting.",
+        "estimatedMinCost": "29 HKD",
+        "highlyRecommended": false,
+        "classification":"Dessert",
+        "type": "food"
+    },
+
+    {
+        "id": 10,
+        "name": "Bubble Waffle",
+        "images":[
+            {
+                "src": "/images/Bubble_Waffle_1.png",
+                "alt": "Golden egg waffle in a paper cone with condensed milk on the side."
+            }
+        ],
+        "description":"Crispy-on-the-outside, soft-on-the-inside Hong Kong-style egg waffle served in a paper cone, dusted with powdered sugar. A side of condensed milk adds sweetness, with a warm street market blur in the background.",
+        "estimatedMinCost": "30 HKD",
+        "highlyRecommended": false,
+        "classification":"Snack",
+        "type": "food"
+    },
+
+    {
+        "id": 11,
+        "name": "Bolo Yau",
+        "images": [
+            {
+                "src": "/images/Bolo_Yau_1.png",
+                "alt": "Pineapple bun with a slice of butter on a plate, tea in the background."
+            }
+        ],
+        "description": "Golden Hong Kong-style pineapple bun topped with a melting pat of butter, served on a white plate.",
+        "estimatedMinCost": "15 HKD",
+        "highlyRecommended": false,
+        "classification":"Snack",
+        "type": "food"
+    }
+]
