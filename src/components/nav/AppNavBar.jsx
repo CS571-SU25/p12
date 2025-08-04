@@ -9,7 +9,6 @@ const NAVBAR_STYLE = {
     borderBottom: "2px solid #c60c30",
 };
 const LINK_STYLE = {
-    //color: "#ffffff",
     color: "#c60c30",
     fontWeight: 500,
     margin: "0 1rem",
@@ -42,11 +41,11 @@ export default function AppNavBar(props) {
                     <Nav.Link as={Link} to="/knowledge" style={makeStyle("/knowledge")}>
                         HK Knowledge
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/food" style={makeStyle("/food")}>
-                        Food
-                    </Nav.Link>
                     <Nav.Link as={Link} to="/tourist" style={makeStyle("/tourist")}>
                         Tourist Attractions
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/food" style={makeStyle("/food")}>
+                        Food
                     </Nav.Link>
                 </Nav>
 

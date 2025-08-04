@@ -83,11 +83,13 @@ export default function TouristAttractionsPage() {
             Refine Attractions
           </Card.Title>
 
-          <Form className="d-flex flex-wrap align-items-end">
-            <Form.Group controlId="filterRegion" className="me-3 mb-3">
+          <Form className="d-flex flex-wrap align-items-end refine-form">
+
+            <Form.Group controlId="filterRegion" className="me-3 mb-3 refine-form">
               <Form.Label style={{ fontWeight: '600' }}>Region</Form.Label>
               <Form.Select
                 value={filterRegion}
+                style={{ cursor: "pointer" }}
                 onChange={e => setFilterRegion(e.target.value)}
                 aria-label="Filter by region">
                 <option value="">All</option>
@@ -95,10 +97,11 @@ export default function TouristAttractionsPage() {
               </Form.Select>
             </Form.Group>
 
-            <Form.Group controlId="filterInterest" className="me-3 mb-3">
+            <Form.Group controlId="filterInterest" className="me-3 mb-3 refine-form">
               <Form.Label style={{ fontWeight: '600' }}>Interest</Form.Label>
               <Form.Select
                 value={filterInterest}
+                style={{ cursor: "pointer" }}
                 onChange={e => setFilterInterest(e.target.value)}
                 aria-label="Filter by interest">
                 <option value="">All</option>
@@ -106,13 +109,20 @@ export default function TouristAttractionsPage() {
               </Form.Select>
             </Form.Group>
 
-            <Form.Group controlId="filterRecommended" className="d-flex align-items-center me-3 mb-3">
-              <Form.Check
-                type="checkbox"
-                label="Highly Recommended"
-                checked={filterRecommended}
-                onChange={e => setFilterRecommended(e.target.checked)}
-              />
+            <Form.Group controlId="filterRecommended" className="me-3 mb-3" style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <input
+                  id="filterRecommended"
+                  type="checkbox"
+                  checked={filterRecommended}
+                  onChange={(e) => setFilterRecommended(e.target.checked)}
+                  style={{ cursor: "pointer", margin: 0, width: 16, height: 16, flexShrink: 0, }}
+                  className="form-check-input"
+                />
+                <label htmlFor="filterRecommended" style={{ margin: 2, userSelect: "none" }}>
+                  Highly Recommended
+                </label>
+              </div>
             </Form.Group>
 
             <Button

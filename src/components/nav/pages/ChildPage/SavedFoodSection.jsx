@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { Row, Col, Card, Form } from "react-bootstrap";
+import { Row, Col, Card, Form, Container } from "react-bootstrap";
 import { useSavedComposite } from "../../../SavedCompositeContext"
 import { useData } from "../../../DataContext"
 import SavedFoodCard from "./SavedFoodCard";
@@ -35,7 +35,7 @@ export default function SavedFoodSection() {
 
 
     return (
-        <div>
+        <Container>
             <Card
                 style={{
                     padding: "1rem",
@@ -54,6 +54,7 @@ export default function SavedFoodSection() {
                         </label>
                         <Form.Select
                             id="classification-select"
+                            style={{ cursor: "pointer" }}
                             value={classificationFilter}
                             onChange={(e) => setClassificationFilter(e.target.value)}
                         >
@@ -85,7 +86,7 @@ export default function SavedFoodSection() {
                 </Row>
             )}
 
-        </div>
+        </Container>
     )
 
 }

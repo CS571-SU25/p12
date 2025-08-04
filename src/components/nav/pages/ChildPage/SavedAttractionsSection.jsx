@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { Row, Col, Card, Form } from "react-bootstrap";
+import { Row, Col, Card, Form, Container } from "react-bootstrap";
 import { useSavedComposite } from "../../../SavedCompositeContext"
 import { useData } from "../../../DataContext"
 import SavedAttractionCard from "./SavedAttractionCard";
@@ -51,7 +51,8 @@ export default function SavedAttractionsSection() {
     }
 
     return (
-        <div>
+            <Container>
+            
             <Card
                 style={{
                     padding: "1rem",
@@ -65,6 +66,7 @@ export default function SavedAttractionsSection() {
                         <label htmlFor="region-select" style={{ fontWeight: 600, display: "block" }}>Region</label>
                         <Form.Select
                             id="region-select"
+                            style={{ cursor: "pointer" }}
                             value={regionFilter}
                             onChange={(e) => setRegionFilter(e.target.value)}
                         >
@@ -80,6 +82,7 @@ export default function SavedAttractionsSection() {
                         <label htmlFor="interest-select" style={{ fontWeight: 600, display: "block" }}>Interest</label>
                         <Form.Select
                             id="interest-select"
+                            style={{ cursor: "pointer" }}
                             value={interestFilter}
                             onChange={(e) => setInterestFilter(e.target.value)}
                         >
@@ -107,7 +110,7 @@ export default function SavedAttractionsSection() {
                     ))}
                 </Row>
             )}
-        </div>
+        </Container>
     )
 
 }

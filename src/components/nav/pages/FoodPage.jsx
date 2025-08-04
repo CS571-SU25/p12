@@ -97,6 +97,7 @@ export default function FoodPage() {
               <Form.Label style={{ fontWeight: 600 }}>Classification</Form.Label>
               <Form.Select
                 value={filterClassification}
+                style={{ cursor: "pointer" }}
                 onChange={(e) => setFilterClassification(e.target.value)}
                 aria-label="Filter by classification"
               >
@@ -113,6 +114,7 @@ export default function FoodPage() {
               <Form.Label style={{ fontWeight: 600 }}>Sort by Price</Form.Label>
               <Form.Select
                 value={sortPrice}
+                style={{ cursor: "pointer" }}
                 onChange={(e) => setSortPrice(e.target.value)}
                 aria-label="Sort by price"
               >
@@ -122,15 +124,21 @@ export default function FoodPage() {
               </Form.Select>
             </Form.Group>
 
-            <Form.Group controlId="filterRecommended" className="d-flex align-items-center me-3 mb-3">
-              <Form.Check
-                type="checkbox"
-                label="Highly Recommended"
-                checked={filterRecommended}
-                onChange={(e) => setFilterRecommended(e.target.checked)}
-              />
+            <Form.Group controlId="filterRecommended" className="me-3 mb-3" style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <input
+                  id="filterRecommended"
+                  type="checkbox"
+                  checked={filterRecommended}
+                  onChange={(e) => setFilterRecommended(e.target.checked)}
+                  style={{ cursor: "pointer", margin: 0, width: 16, height: 16, flexShrink: 0, }}
+                  className="form-check-input"
+                />
+                <label htmlFor="filterRecommended" style={{ margin: 2, userSelect: "none" }}>
+                  Highly Recommended
+                </label>
+              </div>
             </Form.Group>
-
 
             <Button
               onClick={clearFilters}
