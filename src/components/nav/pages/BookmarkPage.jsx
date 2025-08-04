@@ -41,6 +41,7 @@ export default function BookmarkPage() {
         <h1 style={{ color: COLORS.primary, marginBottom: '0.5rem' }}>Bookmark</h1>
         <p style={{ color: '#333', marginBottom: '1.5rem' }}>Save your favorite tourist attraction and food here! </p>
 
+        {/* nav bar*/}
         <nav aria-label="Saved categories" role="tablist" style={{ display: "flex", gap: 0, marginBottom: 16 }}>
           <div
             role="tab"
