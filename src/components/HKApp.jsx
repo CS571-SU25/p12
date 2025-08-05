@@ -11,9 +11,9 @@ function HKApp() {
     <SavedProvider>
     <AppNavBar />
 
-    <div style={{ padding: "1rem" }}>
+    <main  style={{ padding: "1rem" }}>
       <Outlet />
-    </div>
+    </main >
 
     <Footer />
     </SavedProvider>
